@@ -4,7 +4,7 @@ zabbix-server for docker-compose
 * 使用容器化环境部署zabbix，部署前提：  
 1.需要安装docker  
 2.需要安装docker-compose  
-# install docker  
+# Install docker  
 * 安装必要的一些系统工具  
   yum install -y yum-utils  
 * 添加软件源信息  
@@ -13,15 +13,15 @@ zabbix-server for docker-compose
   yum install docker-ce docker-ce-cli containerd.io  
 * 开启Docker服务  
   systemctl start docker  
-# install docker-compose  
+# Install docker-compose  
   yum install -y docker-compose.noarch  
-# deployment zabbix  
+# Deployment zabbix  
 * 部署zabbix-server
   docker-compose up -d  
 * 访问web页面  
   url: localhost:8081  
   user: Admin / passwd: zabbix  
-# agent  
+# Agent  
 * 创建映射目录
   mkdir zabbix-agent & cd zabbix-agent  
   copy 配置.conf文件到这个目录  
