@@ -16,7 +16,7 @@ zabbix-server for docker-compose
 # Install docker-compose  
   yum install -y docker-compose.noarch  
 # Deployment zabbix  
-* 部署zabbix-server
+* 部署zabbix-server  
   docker-compose up -d  
 * 访问web页面  
   url: localhost:8081  
