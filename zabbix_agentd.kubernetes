@@ -1,0 +1,7 @@
+LogType=console
+Server=hostname              #zabbix server 主机ip
+StartAgents=3
+ServerActive=hostname:10051  #zabbix server 主机ip
+Hostname=nodes               #agent端主机名
+User=zabbix                  
+UnsafeUserParameters=1
