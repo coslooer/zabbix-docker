@@ -26,5 +26,6 @@ zabbix-server for docker-compose
   mkdir zabbix-agent & cd zabbix-agent  
   copy 配置.conf文件到这个目录  
 * 启动agent端镜像  
-  docker run -d --name zabbix-agent  -v /root/jianshu/zabbix-docker/zabbix-agent:/etc/zabbix/ -p 10050:10050 zabbix/zabbix-agent:latest  
+  docker run -d --name zabbix-agent  -v /mnt/zabbix-agent:/etc/zabbix/ -p 10050:10050 zabbix/zabbix-agent:latest  
   检查启动情况：docker logs  
+  客户端启动需要挂载配置文件 以上为通用部署方法，k8s部署的配置文件为zabbix_agentd.kuberneter,部署时去掉后缀，修改为.conf格式。
