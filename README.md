@@ -28,4 +28,10 @@ zabbix-server for docker-compose
 * 启动agent端镜像  
   docker run -d --name zabbix-agent  -v /mnt/zabbix-agent:/etc/zabbix/ -p 10050:10050 zabbix/zabbix-agent:latest  
   检查启动情况：docker logs  
-  客户端启动需要挂载配置文件 以上为通用部署方法，k8s部署的配置文件为zabbix_agentd.kuberneter,部署时去掉后缀，修改为.conf格式。
+  客户端启动需要挂载配置文件 以上为通用部署方法，k8s部署的配置文件为zabbix_agentd.kuberneter,部署时去掉后缀，修改为.conf格式。  
+* 时区问题  
+  在docker-compose.yml的zabbix-web-nginx-mysql中的加上  
+  environment:  
+   - PHP_TZ=Asia/Shanghai  
+  即可
+
