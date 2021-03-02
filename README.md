@@ -31,7 +31,7 @@ zabbix-server for docker-compose
   客户端启动需要挂载配置文件 以上为通用部署方法，k8s部署的配置文件为zabbix_agentd.kuberneter,部署时去掉后缀，修改为.conf格式。  
 * 时区问题  
   在docker-compose.yml的zabbix-web-nginx-mysql中的加上  
+  ```shell  
   environment:  
    - PHP_TZ=Asia/Shanghai  
-  即可
-
+  ```  
