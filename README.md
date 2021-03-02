@@ -22,6 +22,7 @@ zabbix-server for docker-compose
   systemctl start docker  
   ```  
 # Install docker-compose  
+* 简易安装  
   ```shell  
   yum install -y docker-compose.noarch  
   ```  
