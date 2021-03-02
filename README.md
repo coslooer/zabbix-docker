@@ -35,3 +35,10 @@ zabbix-server for docker-compose
   environment:  
    - PHP_TZ=Asia/Shanghai  
   ```  
+* 字体问题  
+  只需要把docker-compose中的zabbix-web-nginx-mysql下添加如下挂载即可:  
+  ```yaml  
+    volumes:
+   - ./font:/usr/share/zabbix/assets/fonts:ro  
+  ```  
+  字体的可以从windows上拷贝至挂载目录中./font目录下，并修改文件名称后重启zabbix即可
