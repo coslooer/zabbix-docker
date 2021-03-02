@@ -6,7 +6,9 @@ zabbix-server for docker-compose
 2.需要安装docker-compose  
 # Install docker  
 * 安装必要的一些系统工具  
+  ```shell  
   yum install -y yum-utils  
+  ```  
 * 添加软件源信息  
   yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo  
 * 安装Docker  
