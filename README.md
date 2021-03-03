@@ -7,7 +7,7 @@ zabbix-server for docker-compose
 # Install docker  
 * 安装必要的一些系统工具  
   ```shell  
-  yum install -y yum-utils  
+  yum install -y yum-utils device-mapper-persistent-data  lvm2
   ```  
 * 添加软件源信息  
   ```shell
