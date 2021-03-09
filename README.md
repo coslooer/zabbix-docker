@@ -24,6 +24,7 @@ zabbix-server for docker-compose
 # Install docker-compose  
 * 简易安装  
   ```shell  
+  yum install -y epel-release
   yum install -y docker-compose.noarch  
   ```  
 # Deployment zabbix  
