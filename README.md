@@ -1,6 +1,7 @@
 # zabbix
 zabbix-server for docker-compose  
 
+* jianshulinux  
 * 使用容器化环境部署zabbix，部署前提：  
 1.需要安装docker  
 2.需要安装docker-compose  
